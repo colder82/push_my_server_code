@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavel Moiseev | Senior Product Analyst CV</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        },
+                        accent: {
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom Glassmorphism and Print Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(229, 231, 235, 0.8);
+        }
+
+        .dark .glass-panel {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        .dark .glass-nav {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 4px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+
+        /* Print Style Overrides */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background: white !important;
+                color: black !important;
+            }
+            .glass-panel {
+                background: white !important;
+                border: 1px solid #ddd !important;
+                backdrop-filter: none !important;
+                box-shadow: none !important;
+            }
+            .print-break-inside-prevent {
+                break-inside: avoid;
+            }
+            .accordion-content {
+                display: block !important;
+                max-height: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 min-h-screen selection:bg-brand-500 selection:text-white">
+
+    <nav class="sticky top-0 z-50 glass-nav border-b border-slate-200 dark:border-slate-800 transition-colors duration-300 no-print">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="text-lg font-bold tracking-tight flex items-center gap-2 group">
+                <span class="bg-gradient-to-r from-brand-500 to-accent-500 text-transparent bg-clip-text font-black text-xl">PM</span>
+                <span class="group-hover:text-brand-500 transition-colors">Pavel Moiseev</span>
+            </a>
+
+            <!-- Quick Links / Actions -->
+            <div class="flex items-center gap-3 sm:gap-4">
+                <button onclick="window.print()" class="flex items-center gap-2 text-xs sm:text-sm font-medium px-3 py-1.5 rounded-lg bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors">
+                    <i data-lucide="printer" class="w-4 h-4">activated</i>
+                    <span class="hidden sm:inline">Print / Save PDF</span>
+                </button>
+                <button id="themeToggle" class="p-2 rounded-lg bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors">
+                    <i data-lucide="sun" class="w-4 h-4 hidden dark:block text-amber-400"></i>
+                    <i data-lucide="moon" class="w-4 h-4 block dark:hidden text-slate-700"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-8 sm:space-y-12">
+
+        <section class="glass-panel rounded-2xl p-6 sm:p-8 relative overflow-hidden shadow-xl border border-slate-200 dark:border-slate-800">
+            <!-- Decorative Glow Background -->
+            <div class="absolute -top-24 -right-24 w-72 h-72 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-accent-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="flex flex-col md:flex-row gap-6 md:items-center justify-between relative z-10">
+                <div class="space-y-3">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-brand-500/10 text-brand-600 dark:text-brand-400 border border-brand-500/20">
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                        <span>Barcelona, Spain</span>
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
+                        Pavel Moiseev
+                    </h1>
+                    
+                    <p class="text-xl sm:text-2xl font-semibold text-brand-600 dark:text-brand-400">
+                        Product Analyst
+                    </p>
+
+                    <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl pt-2">
+                        9 years in analytics with focus on fin-tech products, of which 4 years of experience as a Product Analyst skilled in data analysis, reporting, web analytics, hypothesis validating and providing insights to business.
+                    </p>
+                </div>
+
+                <!-- Contact & Actions CTA -->
+                <div class="flex flex-col gap-2.5 min-w-[220px] no-print pt-4 md:pt-0 border-t md:border-t-0 border-slate-200 dark:border-slate-800">
+                    <a href="mailto:nebo.blizko@gmail.com" class="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-medium text-sm transition-all shadow-lg shadow-brand-500/20">
+                        <i data-lucide="mail" class="w-4 h-4"></i>
+                        <span>Email Me</span>
+                    </a>
+                    
+                    <a href="https://t.me/colder82" target="_blank" class="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 font-medium text-sm transition-colors">
+                        <i data-lucide="send" class="w-4 h-4 text-sky-500"></i>
+                        <span>Telegram</span>
+                    </a>
+
+                    <a href="https://linkedin.com/in/colder82" target="_blank" class="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 font-medium text-sm transition-colors">
+                        <i data-lucide="linkedin" class="w-4 h-4 text-blue-500"></i>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Contacts Row -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="phone" class="w-4 h-4 text-brand-500"></i>
+                    <a href="tel:+34600323363" class="hover:underline">+34 600 32 33 63</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="mail" class="w-4 h-4 text-brand-500"></i>
+                    <a href="mailto:nebo.blizko@gmail.com" class="hover:underline truncate">nebo.blizko@gmail.com</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="send" class="w-4 h-4 text-brand-500"></i>
+                    <a href="https://t.me/colder82" target="_blank" class="hover:underline">t.me/colder82</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="linkedin" class="w-4 h-4 text-brand-500"></i>
+                    <a href="https://linkedin.com/in/colder82" target="_blank" class="hover:underline">linkedin.com/in/colder82</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold tracking-tight flex items-center gap-2">
+                <i data-lucide="cpu" class="w-5 h-5 text-brand-500"></i>
+                <span>Skills & Competencies</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Technical Skills -->
+                <div class="glass-panel p-5 rounded-xl space-y-3">
+                    <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center gap-2">
+                        <i data-lucide="code-2" class="w-4 h-4"></i>
+                        <span>Technical Expertise</span>
+                    </h3>
+                    
+                    <div class="space-y-2">
+                        <div>
+                            <span class="text-xs font-semibold text-slate-700 dark:text-slate-300">SQL:</span>
+                            <div class="flex flex-wrap gap-1.5 mt-1">
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-200 dark:bg-slate-800">Oracle</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-200 dark:bg-slate-800">MS SQL</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-200 dark:bg-slate-800">PostgreSQL</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-200 dark:bg-slate-800">Clickhouse</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-200 dark:bg-slate-800">MySQL</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="text-xs font-semibold text-slate-700 dark:text-slate-300">BI Tools:</span>
+                            <div class="flex flex-wrap gap-1.5 mt-1">
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-brand-500/10 text-brand-600 dark:text-brand-300 border border-brand-500/20">Tableau</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-brand-500/10 text-brand-600 dark:text-brand-300 border border-brand-500/20">Power BI</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-200 dark:bg-slate-800">SQL Reporting Services</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="text-xs font-semibold text-slate-700 dark:text-slate-300">Python Ecosystem:</span>
+                            <div class="flex flex-wrap gap-1.5 mt-1">
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-200 dark:bg-slate-800">Pandas</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-200 dark:bg-slate-800">Numpy</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-200 dark:bg-slate-800">Matplotlib</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-200 dark:bg-slate-800">Scipy</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-200 dark:bg-slate-800">Sklearn</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="text-xs font-semibold text-slate-700 dark:text-slate-300">Other Tools & Methods:</span>
+                            <div class="flex flex-wrap gap-1.5 mt-1">
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-accent-500/10 text-accent-600 dark:text-accent-400 border border-accent-500/20">A/B Testing</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-200 dark:bg-slate-800">Statistics</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-200 dark:bg-slate-800">GA</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-200 dark:bg-slate-800">GTM</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-200 dark:bg-slate-800">JavaScript</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-200 dark:bg-slate-800">Airflow</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-200 dark:bg-slate-800">AI Tools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills & Methodologies -->
+                <div class="glass-panel p-5 rounded-xl space-y-3 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center gap-2">
+                            <i data-lucide="users" class="w-4 h-4"></i>
+                            <span>Soft Skills & Methodologies</span>
+                        </h3>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3">
+                            <div class="p-2.5 rounded-lg bg-slate-100 dark:bg-slate-900/60 border border-slate-200/50 dark:border-slate-800/50 flex items-center gap-2">
+                                <i data-lucide="brain" class="w-4 h-4 text-brand-500"></i>
+                                <span class="text-xs font-medium">Critical thinking</span>
+                            </div>
+                            <div class="p-2.5 rounded-lg bg-slate-100 dark:bg-slate-900/60 border border-slate-200/50 dark:border-slate-800/50 flex items-center gap-2">
+                                <i data-lucide="puzzle" class="w-4 h-4 text-brand-500"></i>
+                                <span class="text-xs font-medium">Problem-solving</span>
+                            </div>
+                            <div class="p-2.5 rounded-lg bg-slate-100 dark:bg-slate-900/60 border border-slate-200/50 dark:border-slate-800/50 flex items-center gap-2">
+                                <i data-lucide="user-check" class="w-4 h-4 text-brand-500"></i>
+                                <span class="text-xs font-medium">Mentoring</span>
+                            </div>
+                            <div class="p-2.5 rounded-lg bg-slate-100 dark:bg-slate-900/60 border border-slate-200/50 dark:border-slate-800/50 flex items-center gap-2">
+                                <i data-lucide="kanban" class="w-4 h-4 text-brand-500"></i>
+                                <span class="text-xs font-medium">Requirements gathering</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Summary Highlight -->
+                    <div class="p-3.5 rounded-lg bg-brand-500/5 border border-brand-500/20 text-xs text-slate-600 dark:text-slate-300 mt-4">
+                        <p class="italic">"Seeking a position as a Product Analyst where my analytical skills, organizational capabilities, and data processing experience will add tangible business value."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <h2 class="text-xl font-bold tracking-tight flex items-center gap-2">
+                    <i data-lucide="briefcase" class="w-5 h-5 text-brand-500"></i>
+                    <span>Work Experience</span>
+                </h2>
+
+                <!-- Role Filter (No-print) -->
+                <div class="flex items-center gap-1 bg-slate-200 dark:bg-slate-900 p-1 rounded-xl text-xs no-print self-start sm:self-auto">
+                    <button onclick="filterExperience('all')" id="filter-all" class="px-3 py-1.5 rounded-lg font-medium transition-colors bg-white dark:bg-slate-800 shadow-sm">All</button>
+                    <button onclick="filterExperience('product')" id="filter-product" class="px-3 py-1.5 rounded-lg font-medium transition-colors text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100">Product Analytics</button>
+                    <button onclick="filterExperience('pm')" id="filter-pm" class="px-3 py-1.5 rounded-lg font-medium transition-colors text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100">Management & BA</button>
+                </div>
+            </div>
+
+            <div class="space-y-4" id="experienceContainer">
+
+                <!-- 1. ID FINANCE -->
+                <div class="exp-card glass-panel rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden transition-all print-break-inside-prevent" data-category="product">
+                    <div class="p-5 sm:p-6 cursor-pointer select-none" onclick="toggleAccordion('exp-1')">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2">
+                                    <span>Senior Product Analyst</span>
+                                    <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-semibold border border-emerald-500/20">Current</span>
+                                </h3>
+                                <div class="text-sm font-semibold text-brand-600 dark:text-brand-400">
+                                    ID Finance <span class="font-normal text-xs text-slate-500 dark:text-slate-400">(Best Fintech Company Spain 2025 - Global Banking & Finance Awards)</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs font-semibold text-slate-500 dark:text-slate-400">
+                                <span class="bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-md">Sep 2024 - Currently</span>
+                                <i data-lucide="chevron-down" id="icon-exp-1" class="w-5 h-5 transition-transform duration-300 no-print"></i>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Preview / Toggleable Content -->
+                        <div id="exp-1" class="accordion-content space-y-4 pt-4 border-t border-slate-200 dark:border-slate-800/80">
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2">Responsibilities</h4>
+                                <ul class="list-disc list-inside text-sm text-slate-700 dark:text-slate-300 space-y-1">
+                                    <li>Developing and maintaining data marts for Plazo product team and cross-teams;</li>
+                                    <li>Suggesting product changes and effect estimating on product metrics (CR, ARPU, Retention, etc.);</li>
+                                    <li>Designing and conducting A/B tests, analyzing the results;</li>
+                                    <li>Automating of reports and creating dashboards;</li>
+                                    <li>Exploring data anomalies, identifying patterns and explaining trends.</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-brand-500/5 p-4 rounded-lg border border-brand-500/15">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400 mb-2 flex items-center gap-1.5">
+                                    <i data-lucide="trophy" class="w-4 h-4"></i>
+                                    <span>Key Accomplishments</span>
+                                </h4>
+                                <ul class="list-disc list-inside text-sm text-slate-700 dark:text-slate-300 space-y-1.5">
+                                    <li>Created a subscription collection monitoring report for clients, which allowed for the identification of subscription accrual errors (e.g. based on May 2025 report, collected missing <strong>50k EUR</strong>).</li>
+                                    <li>Created user-friendly and functional dashboards for the product team displaying key growth metrics in one place, reducing operational monitoring from 10 reports to 2.</li>
+                                    <li>Identified the problem of customer base growth due to restrictions on lead's registration from different channels (API and Non-API).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. MTS BANK -->
+                <div class="exp-card glass-panel rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden transition-all print-break-inside-prevent" data-category="product">
+                    <div class="p-5 sm:p-6 cursor-pointer select-none" onclick="toggleAccordion('exp-2')">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-slate-100">Leading Product Analyst</h3>
+                                <div class="text-sm font-semibold text-brand-600 dark:text-brand-400">
+                                    MTS Bank <span class="font-normal text-xs text-slate-500 dark:text-slate-400">(Fintech company, Top-30 Russian banks)</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs font-semibold text-slate-500 dark:text-slate-400">
+                                <span class="bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-md">Sep 2022 - Aug 2024</span>
+                                <i data-lucide="chevron-down" id="icon-exp-2" class="w-5 h-5 transition-transform duration-300 no-print"></i>
+                            </div>
+                        </div>
+
+                        <div id="exp-2" class="accordion-content space-y-4 pt-4 border-t border-slate-200 dark:border-slate-800/80">
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2">Responsibilities</h4>
+                                <ul class="list-disc list-inside text-sm text-slate-700 dark:text-slate-300 space-y-1">
+                                    <li>Activities to improve user experience and increase conversion at all stages of product funnels on the website (A/B tests, improving site metrics, etc.);</li>
+                                    <li>Implementation of end-to-end analytics from advertising accounts to transactional activity;</li>
+                                    <li>Automating of reports and creating dashboards;</li>
+                                    <li>Doing EDA and complex data analysis of business indicators, identifying relevant trends;</li>
+                                    <li>Managing the flow of tasks, mentoring 2 product analysts and supervising an intern.</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-brand-500/5 p-4 rounded-lg border border-brand-500/15">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400 mb-2 flex items-center gap-1.5">
+                                    <i data-lucide="trophy" class="w-4 h-4"></i>
+                                    <span>Key Accomplishments</span>
+                                </h4>
+                                <ul class="list-disc list-inside text-sm text-slate-700 dark:text-slate-300 space-y-1.5">
+                                    <li>Wrote a strategy for product analytics development in the retail marketing area for the next 2 years.</li>
+                                    <li>Automated reconciliation with partners on applications for bank products from their resources, freeing up ~4 hours of analyst work weekly.</li>
+                                    <li>Implemented automatic uploading of a universal audience sample for advertising targeting, covering 80% of audience selection requests.</li>
+                                    <li>Created dashboards for main banking products with end-to-end analytics from entering the site to issuing the product, reducing product funnel requests by 20%.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. ALFA-BANK -->
+                <div class="exp-card glass-panel rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden transition-all print-break-inside-prevent" data-category="pm">
+                    <div class="p-5 sm:p-6 cursor-pointer select-none" onclick="toggleAccordion('exp-3')">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-slate-100">Project Manager</h3>
+                                <div class="text-sm font-semibold text-brand-600 dark:text-brand-400">
+                                    Alfa-Bank <span class="font-normal text-xs text-slate-500 dark:text-slate-400">(Private bank, 4th place in terms of assets in Russia)</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs font-semibold text-slate-500 dark:text-slate-400">
+                                <span class="bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-md">Nov 2019 - Sep 2021</span>
+                                <i data-lucide="chevron-down" id="icon-exp-3" class="w-5 h-5 transition-transform duration-300 no-print"></i>
+                            </div>
+                        </div>
+
+                        <div id="exp-3" class="accordion-content space-y-4 pt-4 border-t border-slate-200 dark:border-slate-800/80 hidden">
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2">Responsibilities</h4>
+                                <p class="text-sm text-slate-700 dark:text-slate-300">Launching projects of retail business and managing projects life cycle.</p>
+                            </div>
+
+                            <div class="bg-brand-500/5 p-4 rounded-lg border border-brand-500/15">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400 mb-2 flex items-center gap-1.5">
+                                    <i data-lucide="trophy" class="w-4 h-4"></i>
+                                    <span>Key Accomplishments</span>
+                                </h4>
+                                <ul class="list-disc list-inside text-sm text-slate-700 dark:text-slate-300 space-y-1.5">
+                                    <li>Launched products from IT side: "Credit holidays", "Online refinancing of external loans".</li>
+                                    <li>Launched integration with government service "Gosuslugi" for loading data into loan application form online ("Digital profile"), improving conversion rate by 2%.</li>
+                                    <li>Automated performance metrics collection for IT teams in retail lending (4 Power BI reports), enabling faster response to problems and better workload planning.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. MEGAFON -->
+                <div class="exp-card glass-panel rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden transition-all print-break-inside-prevent" data-category="pm">
+                    <div class="p-5 sm:p-6 cursor-pointer select-none" onclick="toggleAccordion('exp-4')">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-slate-100">Business Analyst</h3>
+                                <div class="text-sm font-semibold text-brand-600 dark:text-brand-400">
+                                    MegaFon <span class="font-normal text-xs text-slate-500 dark:text-slate-400">(Telecom company, 30% cellular market share in Russia)</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs font-semibold text-slate-500 dark:text-slate-400">
+                                <span class="bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-md">Jun 2018 - Oct 2019</span>
+                                <i data-lucide="chevron-down" id="icon-exp-4" class="w-5 h-5 transition-transform duration-300 no-print"></i>
+                            </div>
+                        </div>
+
+                        <div id="exp-4" class="accordion-content space-y-4 pt-4 border-t border-slate-200 dark:border-slate-800/80 hidden">
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2">Responsibilities</h4>
+                                <ul class="list-disc list-inside text-sm text-slate-700 dark:text-slate-300 space-y-1">
+                                    <li>Description of functional requirements, technical specifications and use cases;</li>
+                                    <li>Planning of a product and updating the product backlog;</li>
+                                    <li>Analysis of data from various corporate systems and mobile application metrics.</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-brand-500/5 p-4 rounded-lg border border-brand-500/15">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400 mb-2 flex items-center gap-1.5">
+                                    <i data-lucide="trophy" class="w-4 h-4"></i>
+                                    <span>Key Accomplishments</span>
+                                </h4>
+                                <ul class="list-disc list-inside text-sm text-slate-700 dark:text-slate-300 space-y-1.5">
+                                    <li>Gathered requirements for internal user mobile app chatbot, designed conversation map and CJM view, leading to app launch.</li>
+                                    <li>Identified basic applications used across departments to unify workplace profiles based on log analysis and software deployment systems.</li>
+                                    <li>Launched a pilot project related to smart search on the service desk portal.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. RB FACTORING -->
+                <div class="exp-card glass-panel rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden transition-all print-break-inside-prevent" data-category="pm">
+                    <div class="p-5 sm:p-6 cursor-pointer select-none" onclick="toggleAccordion('exp-5')">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-slate-100">IT Services Manager & Reporting Analyst</h3>
+                                <div class="text-sm font-semibold text-brand-600 dark:text-brand-400">
+                                    RB Factoring <span class="font-normal text-xs text-slate-500 dark:text-slate-400">(6th place in factoring services market in Russia, B2B)</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs font-semibold text-slate-500 dark:text-slate-400">
+                                <span class="bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-md">Sep 2015 - Jun 2018</span>
+                                <i data-lucide="chevron-down" id="icon-exp-5" class="w-5 h-5 transition-transform duration-300 no-print"></i>
+                            </div>
+                        </div>
+
+                        <div id="exp-5" class="accordion-content space-y-4 pt-4 border-t border-slate-200 dark:border-slate-800/80 hidden">
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2">Responsibilities</h4>
+                                <ul class="list-disc list-inside text-sm text-slate-700 dark:text-slate-300 space-y-1">
+                                    <li>Preparing functional requirements for new application features and putting them into operation;</li>
+                                    <li>Managing SQL Server databases, IT infrastructure for production and test environments, IT user support coordinating;</li>
+                                    <li>Preparation of regular reporting and executing of Ad-hoc requests.</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-brand-500/5 p-4 rounded-lg border border-brand-500/15">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400 mb-2 flex items-center gap-1.5">
+                                    <i data-lucide="trophy" class="w-4 h-4"></i>
+                                    <span>Key Accomplishments</span>
+                                </h4>
+                                <ul class="list-disc list-inside text-sm text-slate-700 dark:text-slate-300 space-y-1.5">
+                                    <li>Introduced factoring information system generally accepted in Societe Generale group with a personal client account (web), integrated with client-bank.</li>
+                                    <li>Launched a reporting system, developing main 5 reports on factoring operations for clients.</li>
+                                    <li>Automated verification of shipping documents for Electronic Document Management.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="space-y-4 print-break-inside-prevent">
+            <h2 class="text-xl font-bold tracking-tight flex items-center gap-2">
+                <i data-lucide="graduation-cap" class="w-5 h-5 text-brand-500"></i>
+                <span>Education & Retraining</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="glass-panel p-5 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="w-8 h-8 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center mb-3">
+                            <i data-lucide="bar-chart-2" class="w-4 h-4"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-slate-900 dark:text-slate-100">Diploma in Data Analysis</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Professional Retraining</p>
+                    </div>
+                    <p class="text-xs font-medium text-brand-600 dark:text-brand-400 mt-4 pt-3 border-t border-slate-200 dark:border-slate-800">
+                        Practicum by the Yandex School of Data Analysis
+                    </p>
+                </div>
+
+                <div class="glass-panel p-5 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="w-8 h-8 rounded-lg bg-accent-500/10 text-accent-500 flex items-center justify-center mb-3">
+                            <i data-lucide="folder-kanban" class="w-4 h-4"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-slate-900 dark:text-slate-100">Diploma in Project Management & Business Analysis</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Professional Retraining</p>
+                    </div>
+                    <p class="text-xs font-medium text-accent-600 dark:text-accent-400 mt-4 pt-3 border-t border-slate-200 dark:border-slate-800">
+                        Russian Academy of National Economy and Public Administration
+                    </p>
+                </div>
+
+                <div class="glass-panel p-5 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-500 flex items-center justify-center mb-3">
+                            <i data-lucide="award" class="w-4 h-4"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-slate-900 dark:text-slate-100">Diploma of Engineer in Materials Science</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Master's Degree</p>
+                    </div>
+                    <p class="text-xs font-medium text-emerald-600 dark:text-emerald-400 mt-4 pt-3 border-t border-slate-200 dark:border-slate-800">
+                        Moscow Engineering Physical Institute (State University)
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t border-slate-200 dark:border-slate-800 text-center text-xs text-slate-500 dark:text-slate-400 no-print space-y-2">
+        <p>© Pavel Moiseev — Product Analyst Portfolio</p>
+        <p class="text-[10px] text-slate-400 dark:text-slate-600">Designed with modern responsive layouts and dark mode support.</p>
+    </footer>
+
+    <script>
+        // 1. Initialize Icons
+        lucide.createIcons();
+
+        // 2. Theme Switcher Logic
+        const themeToggleBtn = document.getElementById('themeToggle');
+        
+        themeToggleBtn.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // Respect saved preference or default to dark
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            document.documentElement.classList.remove('dark');
+        } else {
+            document.documentElement.classList.add('dark');
+        }
+
+        // 3. Accordion Interaction Logic
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            const icon = document.getElementById('icon-' + id);
+
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                if (icon) icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                if (icon) icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // 4. Filter Work Experience Cards
+        function filterExperience(category) {
+            const cards = document.querySelectorAll('.exp-card');
+            const buttons = ['all', 'product', 'pm'];
+
+            buttons.forEach(btn => {
+                const buttonEl = document.getElementById(`filter-${btn}`);
+                if (btn === category) {
+                    buttonEl.className = 'px-3 py-1.5 rounded-lg font-medium transition-colors bg-white dark:bg-slate-800 shadow-sm text-slate-900 dark:text-slate-100';
+                } else {
+                    buttonEl.className = 'px-3 py-1.5 rounded-lg font-medium transition-colors text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100';
+                }
+            });
+
+            cards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                if (category === 'all' || cardCategory === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
